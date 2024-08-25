@@ -59,8 +59,8 @@ function updatedata(){
     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
     <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
   </svg></i> `;
-    dec.innerText="-5";
-    inc.innerText="+5"
+    dec.innerText="-1";
+    inc.innerText="+1"
 
     // console.log(div4);
     main.appendChild(div1);
@@ -113,7 +113,7 @@ function updatedata(){
             updatedata();
     })
     dec.addEventListener('click',function(){
-        item.score=item.score-5;
+        item.score=item.score-1;
         if(item.score>0)
        { div3.innerText=item.score;
         updatedata();}
@@ -124,7 +124,7 @@ function updatedata(){
         console.log(updatedate);
     })
     inc.addEventListener('click',function(){
-        item.score=parseInt(item.score)+5;
+        item.score=parseInt(item.score)+1;
         div3.innerText=item.score;
         updatedata();
         let updatedate=new Date();
